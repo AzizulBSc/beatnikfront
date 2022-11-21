@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import React from "react";
 import styles from '../styles/Product.module.css';
+import('next').NextConfig;
 export default function Product({ product }) {
 
   const router = useRouter();
