@@ -153,7 +153,7 @@ const handleBank = (id)=>{
                   <form onSubmit={handleSubmit}>
                     <div className="row">
                       <div className="col-md-5 col-sm-5" id={styles1.imgdiv}>
-                        <img className={styles1.img} height={100} width={200} src={"http://127.0.0.1:8000" + product.image} />
+                        <img className={styles1.img} height={100} width={200} src={"https://beatnikback.herokuapp.com" + product.image} />
                       </div>
                       <div className="col-md-7 col-sm-7" >
                         <div className="row">{product.name}</div>

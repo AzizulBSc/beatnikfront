@@ -30,7 +30,7 @@ export default function Product({ product }) {
     <>
       <div key={product.id} className={styles.card}>
         <div className={styles.prodimg}>
-          <img width={400} height={200} src={"http://127.0.0.1:8000" + product.image} alt={product.name} />
+          <img width={400} height={200} src={"https://beatnikback.herokuapp.com" + product.image} alt={product.name} />
         </div>
         <div className={styles.details}>
           <p>
