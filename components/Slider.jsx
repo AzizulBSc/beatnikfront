@@ -19,7 +19,7 @@ export default function Slider() {
     <Carousel  infiniteLoop autoPlay showThumbs={false} showArrows={false}>
     {data.map((item) => (
         <div key={item.id} className={styles.slider}>
-            <img  className={styles.img} src = {`${process.env.NEXT_PUBLIC_BACKEND_URL}`+item.image} alt ="pics" />
+            <img  className={styles.img} src = {"http://127.0.0.1:8000" + item.image} alt ="pics" />
              </div>
          ))} 
      </Carousel>
