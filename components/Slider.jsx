@@ -9,7 +9,7 @@ export default function Slider() {
   }, []);
   async function getData()
   {
-    var result = await fetch(`${process.env.BACKEND_URL}/api/slider`);
+    var result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/slider`);
     var result = await result.json();
     setData(result);
   }
@@ -19,7 +19,7 @@ export default function Slider() {
     <Carousel  infiniteLoop autoPlay showThumbs={false} showArrows={false}>
     {data.map((item) => (
         <div key={item.id} className={styles.slider}>
-            <img  className={styles.img} src = {`${process.env.BACKEND_URL}/item.image`} alt ="pics" />
+            <img  className={styles.img} src = {`${process.env.NEXT_PUBLIC_BACKEND_URL}/item.image`} alt ="pics" />
              </div>
          ))} 
      </Carousel>

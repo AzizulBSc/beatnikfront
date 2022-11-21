@@ -38,7 +38,7 @@ export default function Compare() {
     setIsShown(false);
   }, []);
   async function getBank() {
-    var result = await fetch(`${process.env.BACKEND_URL}/api/bank`);
+    var result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/bank`);
     var banks = await result.json();
     setBank(banks);
   }
@@ -53,7 +53,7 @@ export default function Compare() {
     getInterest();
   }, []);
   async function getInterest() {
-    var result = await fetch(`${process.env.BACKEND_URL}/api/interest`);
+    var result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/interest`);
     var data = await result.json();
     setInt(data);
 

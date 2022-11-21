@@ -31,7 +31,7 @@ export default function Product({ product }) {
     <>
       <div key={product.id} className={styles.card}>
         <div className={styles.prodimg}>
-          <img width={400} height={200} src={`${process.env.BACKEND_URL}/product.image`} alt={product.name} />
+          <img width={400} height={200} src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/product.image`} alt={product.name} />
         </div>
         <div className={styles.details}>
           <p>

@@ -9,7 +9,7 @@ export default function Faq({faqs}) {
   }, []);
   async function getData()
   {
-    var result = await fetch(`${process.env.BACKEND_URL}/api/faq`);
+    var result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/faq`);
     var result = await result.json();
     setData(result);
   }

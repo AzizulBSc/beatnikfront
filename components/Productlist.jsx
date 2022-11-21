@@ -12,7 +12,7 @@ export default function Productlist() {
   
 // api call for product
   async function getData() {
-    var result = await fetch(`${process.env.BACKEND_URL}/api/product`);
+    var result = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/product`);
     var result = await result.json();
     setData(result);
   }
