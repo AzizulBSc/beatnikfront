@@ -1,0 +1,32 @@
+.modal {
+  padding: 20px 8px;
+}
+.img {
+  display: block;
+  max-height: 70%;
+  max-width: 100%;
+  border-radius: 8px;
+}
+.select {
+  background: #ffc000;
+  border: solid 2px #997716;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.paid input {
+  background-color: #c9b083;
+  border: solid 2px #c99d16;
+  color: black;
+}
+.btn-calculate {
+  border-radius: 4em;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+.row {
+  padding: 10px 5px;
+}

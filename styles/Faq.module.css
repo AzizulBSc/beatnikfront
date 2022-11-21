@@ -1,0 +1,10 @@
+.faq {
+  display: flex;
+  flex: 1;
+  padding: 1rem 0;
+  align-items: center;
+  align-content: left;
+  border-radius: 20px;
+  background: #aed09d;
+  height: auto;
+}
