@@ -12,7 +12,7 @@ export default function Productlist() {
   
 // api call for product
   async function getData() {
-    var result = await fetch("http://127.0.0.1:8000/api/product");
+    var result = await fetch(`${process.env.BACKEND_URL}/api/product`);
     var result = await result.json();
     setData(result);
   }

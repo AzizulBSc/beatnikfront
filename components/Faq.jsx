@@ -9,7 +9,7 @@ export default function Faq({faqs}) {
   }, []);
   async function getData()
   {
-    var result = await fetch("http://127.0.0.1:8000/api/faq");
+    var result = await fetch(`${process.env.BACKEND_URL}/api/faq`);
     var result = await result.json();
     setData(result);
   }

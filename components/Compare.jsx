@@ -31,20 +31,21 @@ export default function Compare() {
 
   const [product, setProduct] = useState([]);
 
+  // For Bank Data 
   const [banks, setBank] = useState([]);
   useEffect(() => {
     getBank();
     setIsShown(false);
   }, []);
   async function getBank() {
-    var result = await fetch("http://127.0.0.1:8000/api/bank");
+    var result = await fetch(`${process.env.BACKEND_URL}/api/bank`);
     var banks = await result.json();
     setBank(banks);
   }
 
 
   
-  
+  // Bank Intersest
   const [interests, setInterest] = useState([]);
   const [interest, setInt] = useState([]);
   
@@ -52,7 +53,7 @@ export default function Compare() {
     getInterest();
   }, []);
   async function getInterest() {
-    var result = await fetch("http://127.0.0.1:8000/api/interest");
+    var result = await fetch(`${process.env.BACKEND_URL}/api/interest`);
     var data = await result.json();
     setInt(data);
 
@@ -116,7 +117,7 @@ const handleBank = (id)=>{
       <div className={styles.addcompare} >
       <style jsx>{`
       button {
-        background-color:red;
+        background-color:;
       }
     `}</style>
         <button type="button" onClick={clearCompare}>Clear Comparion</button>
