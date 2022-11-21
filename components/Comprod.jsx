@@ -16,7 +16,7 @@ export default function Comprod({ comprod, setProduct, setIsShown, setInterest }
     <>
       <div key={comprod.id} className={comp.card}>
         <div className={comp.prodimg}>
-          <img width={600} height={200} src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/comprod.image`} alt={comprod.name} />
+          <img width={600} height={200} src={"http://127.0.0.1:8000"+ comprod.image} alt={comprod.name} />
         </div>
         <div className={comp.details}>
           <p>

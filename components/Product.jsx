@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
 import styles from '../styles/Product.module.css';
-import('next').NextConfig;
 export default function Product({ product }) {
 
   const router = useRouter();
@@ -31,7 +30,7 @@ export default function Product({ product }) {
     <>
       <div key={product.id} className={styles.card}>
         <div className={styles.prodimg}>
-          <img width={400} height={200} src={`${process.env.NEXT_PUBLIC_BACKEND_URL}/product.image`} alt={product.name} />
+          <img width={400} height={200} src={"http://127.0.0.1:8000" + product.image} alt={product.name} />
         </div>
         <div className={styles.details}>
           <p>
